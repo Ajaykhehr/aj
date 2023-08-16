@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatFishWebsite</title>
+    <link rel="stylesheet" href="Sass.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('nav').addClass('fixed');
+        } else {
+            $('nav').removeClass('fixed');
+        }
+    });
+});
+
+</script>
+<script>
+    $(document).ready(function() {
+      $('.image-gallery figure img').each(function() {
+        $(this).wrap('<a data-fancybox="gallery" href="' + $(this).attr('src') + '"></a>');
+      });
+    
+      $('.video-gallery video').each(function() {
+        $(this).wrap('<a data-fancybox="gallery" href="' + $(this).find('source').attr('src') + '"></a>');
+      });
+    
+      $('[data-fancybox="gallery"]').fancybox({
+        buttons: ['close'],
+        clickContent: 'close'
+      });
+    });
+
+    $(document).on('click', '.fancybox-is-open', function(e) {
+  if ($(e.target).hasClass('fancybox-is-open')) {
+    $.fancybox.close();
+  }
+});
+
+
+    </script>
+    
+
+   
+
+            
+</head>
+<body>
+    <header>
+        <h1> CatFish - An Ontario Fish Species</h1>
+		
+			
+		</div>
+		
+	</header>
+
+		<div class="slider">
+        <nav>
+            <ul>
+               <button><li><a href="#overview">Overview</a></li></button> 
+               <button><li><a href="#habitat">Habitat</a></li></button> 
+               <button><li><a href="#behavior">Behavior</a></li></button> 
+               <button><li><a href="#world-count">World Count</a></li></button> 
+               <button><li><a href="ContactUs.html">Contact Us</a></li></button>
+            </ul>
+        </nav>
+	</div>
+    
+    <section id="overview">
+        <h2><b><u>Overview</u></b></h2>
+		<div class="Collage">
+			<figure>
+				<img src="collage.jpg" alt="The family of Catfish">
+				<figcaption>Catfish Wikipedia, Photo by Pinterest.</figcaption>
+			</figure>
+			
+		</div>
+        <p>
+			Catfish are a large and diversified family of ray-finned fish (order Siluriformes, /sljrfrmiz/ or Nematognathi).
+			 The three largest catfish species currently living are the Mekong giant catfish from Southeast Asia,
+			  the wels catfish from Eurasia, and the piraba from South America. Catfish also include detritivores 
+			  (species that eat dead material on the bottom) and even a tiny parasitic species commonly known as 
+			  the candiru, Vandellia cirrhosa. Scales are not present on either the armor-plated or the bare 
+			  varieties. Contrary to popular belief, not all catfish have noticeable barbels or "whiskers". 
+			  Skull and swimbladder characteristics are used to categorize members of the Siluriformes order.
+			   The commercial value of catfish is significant, and many of the larger species are for food, either cultivated or fished. 
+			   Numerous smaller species, especially those belonging to the genus Corydoras, are crucial to the aquarium hobby. 
+			   While many Auchenipteridae catfish are crepuscular or diurnal (most Loricariidae or Callichthyidae, for example), many catfish are nocturnal.
+        </p>
+		<table>
+            <tr>
+                <th><b>Category</b></th>
+                <th><b>Catfish(Ontario Fish Species</b></th>
+            </tr>
+            <tr>
+                <td>Scientific Order</td>
+                <td>Siluriformes</td>
+            </tr>
+            <tr>
+                <td>Common Name</td>
+                <td>Catfish</td>
+            </tr>
+            <tr>
+                <td>Appearance</td>
+                <td>Distinctive barbels resembling whiskers</td>
+            </tr>
+			<tr>
+				<td>Size Range</td>
+				<td>Varies from small to very large species</td>
+			</tr>
+			<tr>
+				<td>Notable Species</td>
+				<td>Channel Catfish, White Catfish</td>
+			</tr>
+			<tr>
+				<td>Habitat</td>
+				<td>Freshwater rivers, lakes, and streams</td>
+			</tr>
+			<tr>
+				<td>Feeding Habits</td>
+				<td>Carnivorous, scavengers</td>
+			</tr>
+			<tr>
+				<td>Conservation Status</td>
+				<td>Varies based on species</td>
+			</tr>
+			<tr>
+				<td>Commercial Value</td>
+				<td>Important in fishing and aquaculture</td>
+			</tr>
+			<tr>
+				<td>Aquarium Interest</td>
+				<td>Popular in the aquarium hobby</td>
+			</tr>
+			<tr>
+				<td>Activity Pattern</td>
+				<td>Mostly nocturnal, some diurnal</td>
+			</tr>
+        </table>
+    </section>
+
+    <section id="habitat">
+        <h2><b><u>Habitat</u></b></h2>
+        <p>
+            Every continent, with the exception of Antarctica, has catfish species that inhabit in inland or coastal waters. 
+			All of the continents have at some point been home to catfish.With one family endemic to North America and 
+			one family native to Europe, they are most varied in tropical South America, Asia, and Africa. The Americas 
+			are home to more than half of all catfish species. In Madagascar, Australia, and New Guinea, they are the only 
+			ostariophysans to have colonized freshwater habitats.
+        </p>
+		<p>Although the majority live in shallow, flowing water, they can be found in freshwater habitats. Members of three 
+			troglobitic groups and representatives of at least eight families are hypogean (dwell underground).One such 
+			species is the phreatic habitat-dwelling Phreatobius cisternarum. In salt water, you can find a lot of species 
+			from the families Ariidae and Plotosidae, as well as a few species from Aspredinidae and Bagridae.
+		</p>
+		<p>
+			There are many slang terms for different catfish species in the Southern United States, including "mud cat," "polliwogs," and
+			 "chuckleheads." The terms "chucklehead" and "bullhead catfish" are not standardized, therefore one state or location may refer 
+			 to the blue catfish when using the term "chucklehead" to describe a bullhead catfish.
+		</p>
+		<div class="videogallery">
+			<video controls>
+				<source src="habitat.mp4" type="video/mp4">
+				<figcaption>Istock, published by gdmpro</figcaption>
+			</video>
+		</div>
+    </section>
+
+    <section id="behavior">
+        <h2><b><u>Behavior</u></b></h2>
+        <p><b>
+            The behavior of catfish is diverse and fascinating,
+             with different species exhibiting various traits and habits. 
+             Here are some key points about the behavior of catfish:</b>
+        </p>
+        <ol>
+            <li>Nocturnal Nature: Many catfish species are nocturnal, meaning they are most 
+                active during the night. During the daytime, they tend to hide in underwater
+                 structures or in the mud to avoid predators and conserve energy.</li>
+            <li>Bottom Dwellers: Catfish are primarily bottom-dwelling fish, spending much of their time near the riverbed or lake bottom.
+                 Their flattened bodies and ventral mouths are well-suited for scavenging food from the substrate.</li>
+            <li>Sensory Abilities: Catfish possess an exceptional sense of smell and taste, primarily due to the barbels around their mouths. These barbels help them locate food even in dark or murky waters.
+                 They use these sensitive organs to find prey and navigate their surroundings.</li>  
+            <li>Omnivorous Diet: Catfish are opportunistic feeders with an omnivorous diet. They consume a wide range of food items, including small fish, insects, crustaceans, aquatic plants, and decaying organic matter. 
+                Some larger species may even prey on smaller fish and invertebrates.</li> 
+            <li>Parental Care: Some species of catfish, particularly those from the Ictaluridae family, display parental care. They construct nests for their eggs, which they watch after until they hatch. Even after hatching,
+                 several kinds of fry (baby catfish) may continue to be protected.</li> 
+            <li>Social Behavior: Catfish can display social behavior, particularly in aquarium settings. Some species may be seen shoaling together, offering a sense of security and safety.</li>
+            <li>Electrical Communication: Some catfish species, such as the electric catfish, are capable of producing and sensing electrical signals. These signals are used for communication, navigation, and locating prey.</li>
+            <li>Migration: Some catfish species, especially those living in rivers, undertake seasonal migrations for various reasons, including finding better feeding grounds or suitable breeding habitats.</li>
+            <li>Solitary Behavior: While some catfish exhibit social behavior, others are more solitary in nature, preferring to be alone or interacting only when necessary.</li>               
+        </ol>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            <div class="photo-container">
+                <figure>
+                    <img src="photo3.jpg" alt="catfish swimming in the ocean">
+                    <figcaption>Catfish Wikipedia, Photo by Baron Cuvier.</figcaption>
+                </figure>
+                <figure>
+                    <img src="photo5.jpg" alt="catfish swimming in the ocean">
+                    <figcaption>Catfish Wikipedia, Photo by Baron Cuvier.</figcaption>
+                </figure>
+            </div>
+            <div class="video-gallery">
+                <div class="videogallery">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        <figcaption>Istock, published by gdmpro</figcaption>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="world-count">
+        <h2>World Count</h2>
+        <p><b>
+            Catfish is a diverse group of ray-finned fish, belonging to the order Siluriformes. They are found in various regions around the world and are known for their prominent barbels, 
+            which resemble a cat's whiskers, hence the name "catfish."
+
+        </b>
+        </p>
+        <h1>World Count and Statistical Data:</h1>
+        <ul>
+            <li>There are over 3,000 recognized species of catfish worldwide, making them one of the most diverse fish families.</li>
+            <li>Catfish are distributed across different continents, including North and South America, Africa, Europe, Asia, and Australia.</li>
+            <li>The Mekong giant catfish (Pangasianodon gigas) is considered one of the largest freshwater fish species and can reach lengths of over 10 feet (3 meters) and weigh up to 700 pounds (318 kilograms).</li>
+            <li>Some of the smallest catfish species, such as the candiru (Vandellia cirrhosa), are parasitic and have a reputation for being able to swim up into the human urethra, though such incidents are rare and not scientifically documented.</li>
+            <li>Another well-known species of big catfish is the wels catfish (Silurus glanis), which may grow to a length of 13 feet (4 meters) and a weight of over 300 pounds (136 kilograms).</li>
+            <li>Catfish play a significant role in the fishing industry and are raised commercially or caught for human consumption in many nations.</li>
+            <li>One of the most frequently cultivated freshwater fish in the United States is the channel catfish (Ictalurus punctatus), which greatly increases aquaculture production.</li>
+            <li>The Corydoras genus is well-liked by fans in the aquarium hobby because of its calm dispositions, distinctive behaviours, and tiny size, which makes them excellent for community tanks.</li>
+
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ajaypal Singh and Ankit Saini. All rights reserved.</p>
+       <button> <p>Sources: <a href="https://en.wikipedia.org/wiki/Catfish#Communication"></a>Catfish Wikipedia</p>></button>
+       <button><p>Sources: <a href="https://fishingworld.ca/pages/ontario-fish-species opens in new window"></a>An Ontario Fish Species</p>></button>
+       <button> <p>Sources: <a href="https://www.istockphoto.com/video/redtail-catfish-phractocephalus-hemioliopterus-is-a-pimelodid-long-whiskered-catfish-gm1442810841-482013434?irgwc=1&cid=IS&utm_medium=affiliate&utm_source=Oxford+Media+Solutions&clickid=0HJQeJ24bxyPWTo0i4yLFSaZUkFwYb0ZrSKo2A0&utm_term=catfish+behviour&utm_campaign=srp_sponsored_all&utm_content=1020582&irpid=51471"></a> IStock</p>></button>
+    </footer>
+
+</body>
+</html>

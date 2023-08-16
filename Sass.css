@@ -1,0 +1,213 @@
+@import url(Sass.scss);
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background-color: rgb(37, 177, 102);
+  z-index: 1000;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+header h2 {
+  font-style: oblique;
+  font-size: large;
+}
+
+header {
+  background-color: rgb(158, 197, 231);
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Times New Roman", Times, serif;
+  color: yellow;
+}
+header:hover {
+  color: white;
+}
+
+.Image:hover {
+  transform: scale(2, 2);
+}
+
+.Collage:hover {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+.videogallery {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  width: 70%;
+  height: 70%;
+  
+}
+
+.slider {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: right;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+table, td, th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider button {
+  background-color: red;
+  
+}
+
+.form-group button{
+  background-color: red;
+
+}
+
+
+footer button {
+  background-color: red;
+}
+
+
+
+form {
+  border: 3px dashed black;
+  padding: 10px;
+}
+
+
+
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-gallery figure {
+  width: 48%;
+  margin: 0;
+}
+
+.image-gallery img {
+  width: 60%;
+  height: 60%;
+}
+.image-gallery video {
+  width: 70%;
+  height: 70%;
+  padding-right: 100%;
+}
+
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Show the first slide initially */
+.slide:first-child {
+    display: block;
+}
+button {
+  content: attr(data-name);
+  text-transform: uppercase;
+}
+
+
+

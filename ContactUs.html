@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contactus.css">
+</head>
+<body>
+  
+    <section id="Contactus">
+      
+        <div class="container">
+          <h1 >Contact Us</h1>
+          <form  action="https://formspree.io/f/mknljbwq"
+          method="POST"">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" >
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" >
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" >
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="text" id="date" name="date" placeholder="dd/mm/yy" >
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" >
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" ></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+          </section>
+</body>
+
+<script>
+    function validateForm() {
+
+
+  const firstName = document.getElementById("firstName").value;
+  // Validate first name and last name
+  if (firstName.length < 5) {
+    alert("First name should be at least 5 characters.");
+    return false;
+  }
+
+  const lastName = document.getElementById("lastName").value;
+  if (lastName.length < 5) {
+    alert("Last name should be at least 5 characters.");
+    return false;
+  }
+
+  const email = document.getElementById("email").value;
+  // Validate email format
+  if (!email.includes("@")) {
+    alert("Invalid email format.");
+    return false;
+  }
+
+  const date = document.getElementById("date").value;
+   // Validate date format (dd/mm/yy)
+   const datePattern = /^\d{2}\/\d{2}\/\d{2}$/;
+  if (!date.match(datePattern)) {
+    alert("Invalid date format. Please use dd/mm/yy.");
+    return false;
+  }
+
+  const phone = document.getElementById("phone").value;
+  // Validate phone number (10 digits)
+  const phonePattern = /^\d{10}$/;
+  if (!phone.match(phonePattern)) {
+    alert("Invalid phone number. Phone must contain 10 digits.");
+    return false;
+  }
+
+  const message = document.getElementById("message").value;
+  // Validate message length
+  if (message.length < 50) {
+    alert("Message must be at least 50 characters.");
+    return false;
+  }
+
+  
+  // Form validation successful
+  alert("Form submitted successfully!");
+  return true;
+}
+
+</script>
+</html>
